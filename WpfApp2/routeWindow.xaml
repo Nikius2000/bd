@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp2.routeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Маршруты" Height="450" Width="800">
+    <Grid Background="#393e46">
+        <DataGrid x:Name="employeeDataGrid"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,0,312,0" Height="414" VerticalAlignment="Center"/>
+        <TextBox x:Name="searchInput" HorizontalAlignment="Left" Margin="509,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="151"/>
+        <Button x:Name="searchBtn" Content="Поиск" HorizontalAlignment="Left" Margin="660,10,0,0" VerticalAlignment="Top" Height="35" Width="70" Click="searchBtn_Click" Background="#00adb5" Foreground="White"/>
+
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Margin="610,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="numberBox" HorizontalAlignment="Left" Margin="610,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="startAreaBox" HorizontalAlignment="Left" Margin="610,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="endAreaBox" HorizontalAlignment="Left" Margin="610,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="totalTravelTimeBox" HorizontalAlignment="Left" Margin="610,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="companyBox" HorizontalAlignment="Left" Margin="610,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="transportTypeBox" HorizontalAlignment="Left" Margin="610,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="distanceBox" HorizontalAlignment="Left" Margin="610,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="581,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Айди"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="571,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Номер"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="540,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Начало пути"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="546,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Конец пути"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="525,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.568,6.686" Foreground="White"><Run Language="ru-ru" Text="Время поездки"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="553,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Компания"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="522,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Тип транспорта"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="549,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Дистанция"/></TextBlock>
+        <Button x:Name="saveBtn" Content="Сохранить" HorizontalAlignment="Left" Margin="584,240,0,0" VerticalAlignment="Top" Click="saveBtn_Click" Height="35" Width="70" Background="#00adb5" Foreground="White"/>
+        <Button x:Name="delBtn" Content="Удалить" HorizontalAlignment="Left" Margin="660,240,0,0" VerticalAlignment="Top" Click="delBtn_Click" Height="35" Width="70" Background="#00adb5" Foreground="White"/>
+
+    </Grid>
+</Window>

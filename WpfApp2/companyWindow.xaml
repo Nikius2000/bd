@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.companyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Компании" Height="450" Width="800">
+    <Grid Background="#393e46">
+        <DataGrid x:Name="companyDataGrid"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,0,312,0" Height="414" VerticalAlignment="Center"/>
+        <TextBox x:Name="searchInput" HorizontalAlignment="Left" Margin="509,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="35" Width="151"/>
+        <Button x:Name="searchBtn" Content="Поиск" HorizontalAlignment="Left" Margin="660,10,0,0" VerticalAlignment="Top" Height="35" Width="70" Click="searchBtn_Click" Background="#00adb5" Foreground="White"/>
+
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Margin="610,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="610,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="577,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Айди" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="553,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"><Run Language="ru-ru" Text="Название"/></TextBlock>
+        <Button x:Name="saveBtn" Content="Сохранить" HorizontalAlignment="Left" Margin="584,95,0,0" VerticalAlignment="Top" Click="saveBtn_Click" Height="35" Width="70" Background="#00adb5" Foreground="White"/>
+        <Button x:Name="delBtn" Content="Удалить" HorizontalAlignment="Left" Margin="660,95,0,0" VerticalAlignment="Top" Click="delBtn_Click" Height="35" Width="70" Background="#00adb5" Foreground="White"/>
+
+    </Grid>
+</Window>
